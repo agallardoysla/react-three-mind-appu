@@ -1,4 +1,4 @@
-# react-three-mind
+# react-three-mind-appu
 
 React Components adding Augmented Reality capabilities to [@react-three/fiber](https://github.com/pmndrs/react-three-fiber), thanks to [MindAR](https://github.com/hiukim/mind-ar-js).
 

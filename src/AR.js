@@ -313,7 +313,8 @@ const ARAnchor = ({
     if (ref.current) {
       if (mode) {
         if (anchor[target]) {
-          if (ref.current.visible !== true && onAnchorFound) onAnchorFound();
+          if (ref.current.visible !== true && onAnchorFound)
+            onAnchorFound(anchor);
           ref.current.visible = true;
           ref.current.matrix = new Matrix4().fromArray(anchor[target]);
         } else {
@@ -322,7 +323,8 @@ const ARAnchor = ({
         }
       } else {
         if (faceMesh) {
-          if (ref.current.visible !== true && onAnchorFound) onAnchorFound();
+          if (ref.current.visible !== true && onAnchorFound)
+            onAnchorFound(anchor);
           ref.current.visible = true;
           const fm = faceMesh.faceMatrix;
           const s = faceMesh.faceScale;
