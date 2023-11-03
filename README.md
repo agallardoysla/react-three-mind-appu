@@ -3,7 +3,9 @@
 React Components adding Augmented Reality capabilities to [@react-three/fiber](https://github.com/pmndrs/react-three-fiber), thanks to [MindAR](https://github.com/hiukim/mind-ar-js).
 
 ```
-npm i react-three-mind
+npm i react-three-mind-appu
+
+(It is a customized version for the purposes needed.)
 ```
 
 <table>
@@ -72,7 +74,7 @@ const switchCamera = ref.current.switchCamera(); // Switches between environment
   {...canvasProps} // All @react-three/fiber Canvas props are valid
 >
   <Scene />
-</ARView>
+</ARView>;
 ```
 
 ### ARAnchor
