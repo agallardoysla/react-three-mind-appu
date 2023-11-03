@@ -1,13 +1,13 @@
 {
-  "name": "react-three-mind",
+  "name": "react-three-mind-appu",
   "version": "0.2.1",
   "description": "MindAR components for @react-three/fiber",
   "main": "dist/index.js",
-  "author": "Tommaso Turchi",
+  "author": "Andres Gallardo",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tommasoturchi/react-three-mind"
+    "url": "https://github.com/agallardoysla/react-three-mind-appu.git"
   },
   "keywords": [
     "web AR",
