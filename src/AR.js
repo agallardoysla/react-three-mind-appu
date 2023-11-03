@@ -87,8 +87,12 @@ const ARProvider = forwardRef(
             warmupTolerance,
           });
 
-          const { dimensions: imageTargetDimensions } =
-            await controller.addImageTargets(imageTargets);
+          const {
+            dimensions: imageTargetDimensions,
+            matchingDataList,
+            trackingDataList,
+            dataList,
+          } = await controller.addImageTargets(imageTargets);
 
           const postMatrices = imageTargetDimensions.map(
             ([markerWidth, markerHeight]) =>
@@ -112,6 +116,11 @@ const ARProvider = forwardRef(
           controller.onUpdate = ({ type, targetIndex, worldMatrix }) => {
             if (type === "updateMatrix") {
               setAnchors((anchors) => ({
+                otherData: {
+                  matchingDataList,
+                  trackingDataList,
+                  dataList,
+                },
                 ...anchors,
                 [targetIndex]:
                   worldMatrix !== null
