@@ -20,7 +20,8 @@
     "face tracking"
   ],
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "quick-update-build": "yarn build && git add .  && git commit -m 'quick-update-build' && git push"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",

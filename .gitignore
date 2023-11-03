@@ -3,7 +3,7 @@ node_modules/*
 !node_modules/mind-ar/*
 
 # production
-/dist
+# /dist
 build
 
 # misc
