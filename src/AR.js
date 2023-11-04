@@ -92,6 +92,7 @@ const ARProvider = forwardRef(
             matchingDataList,
             trackingDataList,
             dataList,
+            buffer,
           } = await controller.addImageTargets(imageTargets);
 
           const postMatrices = imageTargetDimensions.map(
@@ -120,6 +121,7 @@ const ARProvider = forwardRef(
                   matchingDataList,
                   trackingDataList,
                   dataList,
+                  buffer,
                 },
                 ...anchors,
                 [targetIndex]:
