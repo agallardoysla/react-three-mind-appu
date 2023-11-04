@@ -123,6 +123,7 @@ const ARProvider = forwardRef(
                   trackingDataList,
                   dataList,
                   buffer,
+                  dataList2,
                 },
                 ...anchors,
                 [targetIndex]:
