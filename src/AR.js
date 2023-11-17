@@ -281,7 +281,7 @@ const ARView = forwardRef(
 
     return (
       <Canvas
-        style={{ position: "absolute", minWidth: "100vw", minHeight: "100vh" }}
+        // style={{ position: "absolute", minWidth: "100vw", minHeight: "100vh" }}
         {...rest}
         ref={canvasRef}
       >
